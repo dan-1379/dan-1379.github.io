@@ -1,0 +1,212 @@
+body{
+    background-color: black;
+    color: aliceblue;
+    box-sizing: border-box;
+}
+
+/* INDEX.HTML */
+header{
+    padding-top: calc(50px + 1rem + 2px);
+    text-align: center;
+}
+
+.title{
+    margin-top: 100px;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+.title + p{
+    width: 800px;
+    margin: 35px auto;
+}
+
+.cta-button{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #D9AB91;
+    color:white;
+    display: inline-block;
+    padding: 30px;
+    width: 200px;
+    font-weight: 600;
+    border-radius: 1000px;
+    transition: 0.3s ease;
+}
+
+.cta-button:hover{
+    scale: 1.1;
+}
+/* INDEX END */
+
+/* ABOUT.HTML */
+section h1{
+    text-align: center;
+    border-bottom: 5px solid #D9AB91;
+    padding: 10px;
+    font-size: 40px;
+}
+
+article{
+    font-size: 25px;
+}
+
+video{
+    float: left;
+}
+
+table{
+    width: 800px;
+    text-align: center;
+}
+
+table, th, td{
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+tr:nth-child(even){
+    background-color: #D9AB91;
+}
+/* ABOUT END */
+
+/* MYPHOTOS.HTML */
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 80;
+}
+
+nav h1{
+    color: white;
+    font-size: 30px;
+    align-content: center;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    padding: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid #D9AB91;
+}
+
+.active{
+    color: #D9AB91;
+}
+
+img{
+    width: 100%;
+    margin: 10px;
+}
+
+.images{
+    columns: 300px;
+}
+
+.images h1{
+    color: white;
+    text-align: center;
+    width: 60%;
+    border-bottom: 5px solid #D9AB91;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+footer{
+    background-color: #D9AB91;
+    width: 100%;
+    height: 150px;
+}
+
+footer p{
+    text-align: center;
+    padding: 5px;
+    align-content: center;
+}
+footer hr{
+    width: 90%;
+    border-color: black;
+}
+
+.icons{
+    text-align: center;
+    padding: 10px;
+}
+
+.icons i{
+    color: black;
+}
+
+/* PHOTOS END */
+
+/* CONTACT.HTML */
+form{
+    margin-bottom: 20px;
+}
+.contact-form input, .contact-form textarea{
+    display: block;
+    padding: 10px;
+    margin: 0 auto 10px;
+    font: inherit;
+}
+
+.contatct-info{
+    background-color: red;
+}
+
+input[type = "text"], input[type = "email"]{
+    border-radius: 10px;
+    border: grey;
+    width: 300px;
+}
+
+input[type = "submit"]{
+    border-radius: 20px;
+    padding: 10px;
+    width: 150px;
+    background-color: #D9AB91;
+    color: white;
+}
+
+input[type = "submit"]:hover{
+    scale: 1.05;
+}
+
+.contatct-info{
+    background-color: red;
+    display: inline;
+    justify-content: space-between;
+    width: 200px;
+    height: 300px;
+}
+
+i{
+    color: #D9AB91;
+    display: inline;
+}
+
+.contact-info p{
+    color: white;
+    display: inline;
+}
+
+.contact-email p a{
+   text-decoration: none;
+   color: white;
+   display: inline;
+}
+/* CONTACT END */
