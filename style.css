@@ -5,3 +5,158 @@
     --navyBackground: #094067;
     --redBackground: #EF4565;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/*
+    HOME PAGE
+*/
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("Assets/HOMEPAGE/EurostarTrain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav > h1{
+    cursor: pointer;
+    color: white;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li.selected{
+    border-bottom: 2px solid var(--blueBackground);
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid var(--blueBackground);
+}
+
+.content{
+    margin: 100px;
+    margin-top: 200px;
+    text-align: left;
+    color: white;
+}
+
+.content h1{
+    font-size: 80px;
+}
+
+button{
+    background-color: var(--blueBackground);
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;  
+    transition: 0.5s;
+    font-size: large;
+}
+
+button:hover{
+    background-color: var(--navyBackground);
+}
+main h1{
+    font-size: 50px;
+    text-align: center;
+    padding: 40px;
+}
+
+.selfie{
+    float: left;
+    margin-left: 100px;
+}
+
+.train{
+    float: right;
+    margin-right: 100px;
+}
+
+picture h3{
+    text-align: center;
+    font-size: x-large;
+    padding: 20px;
+}
+
+picture.train h3{
+    padding-left: 10px;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+section:nth-child(even){
+    background-color: var(--navyBackground);
+    color: white;
+    padding: 30px;
+}
+
+main section.explore a{
+    text-decoration: none;
+    color: black;
+    transition: 2s ease;
+}
+
+main section.explore img:hover{
+    scale: 1.01;
+    border-radius: 10px;
+}
+.homePhotos picture img{
+    margin-left: 60px;
+    padding-bottom: 40px;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: var(--blueBackground);
+    padding: 30px;
+    width: 100%;
+}
+
+footer p a{
+    text-decoration: underline;
+    color: white;
+}
+
+footer i{
+    padding: 10px;
+}
+
+/*
+    ABOUT PAGE
+*/
