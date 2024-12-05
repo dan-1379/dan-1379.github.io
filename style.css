@@ -25,7 +25,7 @@ header{
 }
 
 nav{
-    width: 85%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     padding: 30px;
@@ -62,7 +62,7 @@ nav ul li a:hover{
 
 .content{
     margin: 100px;
-    margin-top: 200px;
+    margin-top: 350px;
     text-align: left;
     color: white;
 }
@@ -115,11 +115,11 @@ picture.train h3{
 }
 
 section{
-    width: 100%;
+    width: auto;
     height: 100vh;
 }
 
-section:nth-child(even){
+.homePhotos{
     background-color: var(--navyBackground);
     color: white;
     padding: 30px;
@@ -140,12 +140,43 @@ main section.explore img:hover{
     padding-bottom: 40px;
 }
 
+.homePhotos picture img:hover{
+    filter: grayscale(1);
+}
+
+.top{
+    background-color: var(--redBackground);
+    width: 10%;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;  
+    transition: 0.5s;
+    font-size: large;
+    float: right;
+}
+
+.top a{
+    text-decoration: none;
+    color: var(--WhiteText);
+}
+
+.top a:hover{
+    background-color: #e3143b;
+    color: var(--WhiteText);
+}
+
 footer{
     text-align: center;
     color: white;
     background-color: var(--blueBackground);
     padding: 30px;
-    width: 100%;
+    width: aut;
 }
 
 footer p a{
@@ -160,3 +191,56 @@ footer i{
 /*
     ABOUT PAGE
 */
+.secondNav h1, .secondNav ul li a{
+    color: var(--blackText)
+}
+
+.aboutPageSelfie{
+    float: left;
+}
+
+.aboutPageMain{
+    /* padding: 20px; */
+    padding-right: 70px;
+    /* margin-left: 20px; */
+}
+
+.aboutPageAboutMe{
+    width: auto;
+    height: 70vh;
+}
+
+.aboutPageAboutMe h1{
+    text-align: center;
+}
+
+.floating picture{
+    margin-right: 50px;
+    padding-left: 70px;
+}
+
+.floating p{
+    padding-left: 100px;
+    font-size: 30px;
+}
+
+.aboutPageMain i{
+    padding: 40px 50px 0px 0px;
+    font-size: 60px;
+}
+
+.aboutPageMap{
+    float: right;
+}
+
+.AboutPagemyJourney{
+    padding: 10px;
+    background-color: var(--navyBackground);
+    color: var(--WhiteText);
+    width: auto;
+    height: 70vh;
+}
+
+.AboutPagemyJourney button{
+    margin-left: 90px;
+}
