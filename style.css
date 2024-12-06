@@ -8,10 +8,12 @@
 
 *{
     margin: 0;
-    padding: 0;
     font-family: sans-serif;
 }
 
+body{
+    letter-spacing: 1.5px;
+}
 /*
     HOME PAGE
 */
@@ -71,7 +73,7 @@ nav ul li a:hover{
     font-size: 80px;
 }
 
-button{
+button, .learnmore{
     background-color: var(--blueBackground);
     width: 20%;
     padding: 20px;
@@ -85,8 +87,8 @@ button{
     font-size: large;
 }
 
-button:hover{
-    background-color: var(--navyBackground);
+button:hover, .learnmore:hover{
+    scale: 1.1;
 }
 main h1{
     font-size: 50px;
@@ -173,10 +175,11 @@ main section.explore img:hover{
 
 footer{
     text-align: center;
-    color: white;
-    background-color: var(--blueBackground);
+    color: var(--WhiteText);
+    background-color: var(--navyBackground);
     padding: 30px;
-    width: aut;
+    width: auto;
+    border-top: 2px solid var(--blackText);
 }
 
 footer p a{
@@ -208,6 +211,7 @@ footer i{
 .aboutPageAboutMe{
     width: auto;
     height: 70vh;
+    margin-bottom: 50px;
 }
 
 .aboutPageAboutMe h1{
@@ -243,4 +247,75 @@ footer i{
 
 .AboutPagemyJourney button{
     margin-left: 90px;
+}
+
+.AboutPageAboutInterrailing{
+    width: auto;
+    height: 60vh;
+}
+
+.clear{
+    clear: float;
+}
+
+.AboutPageAboutInterrailing picture{
+    float: left;
+}
+
+.AboutPageFAQ{
+    background-color: var(--navyBackground);
+    color: var(--WhiteText);
+    width: auto;
+    height: 90vh;
+}
+
+details{
+    background-color: var(--blueBackground);
+    padding: 40px;
+    margin: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+details:hover{
+    background-color: var(--WhiteText);
+    color: var(--blackText);
+}
+
+.AboutMyJourney{
+    margin: 20px 50px 0px 50px;
+    width: auto;
+    height: 40vh;
+    font-size: x-large;
+}
+
+.AboutMyJourneyTravelled{
+    background-color: var(--navyBackground);
+    color: var(--WhiteText);
+    padding-left: 50px;
+    font-size: x-large;
+    width: auto;
+    height: 70vh;
+    padding-bottom: 20px;
+}
+
+.AboutMyJourneyTravelled picture{
+    float: right;
+    padding-right: 50px;
+}
+
+.AboutMyJourneyTravelled ol{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    list-style-type: decimal-leading-zero;
+    line-height: 30px;
+}
+
+.AboutMyJourneyTravelled ol li:hover{
+    color: var(--blueBackground);
+}
+
+.AboutMyJourneyTravelled ol li ul li{
+    list-style-type: upper-roman;
 }
