@@ -203,9 +203,7 @@ footer i{
 }
 
 .aboutPageMain{
-    /* padding: 20px; */
     padding-right: 70px;
-    /* margin-left: 20px; */
 }
 
 .aboutPageAboutMe{
@@ -299,6 +297,10 @@ details:hover{
     padding-bottom: 20px;
 }
 
+.AboutMyJourneyTravelled p{
+    font-size: 1rem;
+}
+
 .AboutMyJourneyTravelled picture{
     float: right;
     padding-right: 50px;
@@ -318,4 +320,106 @@ details:hover{
 
 .AboutMyJourneyTravelled ol li ul li{
     list-style-type: upper-roman;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+    background-color: var(--navyBackground);
+    color: var(--WhiteText);
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    
+}
+
+thead tr{
+    background-color: var(--blueBackground);
+}
+
+thead tr th{
+    border-bottom: 5px solid black;
+}
+
+td, th{
+    /* border: 2px solid black; */
+    padding: 20px;
+}
+
+tbody tr:hover{
+    background-color: var(--blueBackground);
+    color: white;
+}
+
+.contactChat{
+    padding: 20px;
+    width: auto;
+    height: 50vh;
+}
+
+.contactChat p{
+   font-size: x-large;
+   padding-left: 70px;
+}
+
+.basicForm{
+    float: right;
+    display: inline-block;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 30%;
+    color: var(--WhiteText)
+    align-content: center;
+}
+
+input[type = "text"], input[type = "email"]{
+    width: 60%;
+   padding: 10px;
+   margin-top: 10px;
+   border-radius: 5px;
+}
+
+input[type = "submit"], input[type = "reset"]{
+    padding: 15px;
+    width: 25%;
+    transition: 0.5s ease-in-out;
+}
+
+input[type = "submit"]{
+    background-color: var(--blueBackground);
+    color: var(--WhiteText);
+}
+
+input[type = "submit"]:hover{
+    background-color: var(--navyBackground);
+    border-radius: 10px;
+}
+
+input[type = "reset"]:hover{
+    background-color: var(--redBackground);
+    color: var(--WhiteText);
+    border-radius: 10px;
+}
+
+.contactNewsletter{
+    background-color: var(--navyBackground);
+    color: var(--WhiteText);
+}
+
+.contactNewsletter form{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 50px;
+}
+
+.contactNewsletter form input, .contactNewsletter form label{
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
+
+fieldset{
+    margin-top: 50px;
 }
