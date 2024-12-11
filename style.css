@@ -118,13 +118,17 @@ picture.train h3{
 
 section{
     width: auto;
-    height: 100vh;
 }
 
 .homePhotos{
     background-color: var(--navyBackground);
     color: white;
     padding: 30px;
+}
+
+.explore{
+    width: auto;
+    height: 90vh;
 }
 
 main section.explore a{
@@ -405,21 +409,46 @@ input[type = "reset"]:hover{
 .contactNewsletter{
     background-color: var(--navyBackground);
     color: var(--WhiteText);
+    width: auto;
 }
 
 .contactNewsletter form{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    padding: 50px;
+    padding-bottom: 20px;
 }
 
 .contactNewsletter form input, .contactNewsletter form label{
-    margin-right: auto;
-    margin-left: auto;
-    width: 50%;
+   padding: 10px;
 }
 
 fieldset{
-    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+fieldset h3{
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+select{
+    width: 20vw;
+    height:2vw;
+    margin-top: 10px;
+}
+
+.contactNewsletter input[type = "submit"], .contactNewsletter input[type = "reset"]{
+    padding: 15px;
+    margin-right: 50px;
+}
+
+.contactNewsletter input[type = "submit"]:hover{
+    background-color: skyblue;
+    color: black;
+}
+
+.buttons{
+    text-align: center;
 }
