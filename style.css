@@ -268,7 +268,7 @@ footer i{
     background-color: var(--navyBackground);
     color: var(--WhiteText);
     width: auto;
-    height: 90vh;
+    height: 120vh;
 }
 
 details{
@@ -451,4 +451,31 @@ select{
 
 .buttons{
     text-align: center;
+}
+
+/*SITEMAP MAIN*/
+.sitemapMain{
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    padding-top: 50px;
+    font-size: xx-large;
+}
+
+.sitemapMain h2{
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+.sitemapMain ul{
+    margin: 10px;
+}
+
+.sitemapMain ul li{
+    list-style-type: none;
+}
+
+.sitemapMain ul li a{
+    text-decoration: underline;
+    color: var(--blackText);
 }
