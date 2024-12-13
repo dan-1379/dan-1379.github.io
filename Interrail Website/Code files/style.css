@@ -1,0 +1,486 @@
+:root{
+    --WhiteText: #ffffff;
+    --blackText: #111111;
+    --blueBackground: #3DA9FC;
+    --navyBackground: #094067;
+    --redBackground: #EF4565;
+}
+
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    letter-spacing: 1.5px;
+}
+/*
+    HOME PAGE
+*/
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("../Assets/HOMEPAGE/EurostarTrain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav > h1{
+    cursor: pointer;
+    color: white;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li.selected{
+    border-bottom: 2px solid var(--blueBackground);
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid var(--blueBackground);
+}
+
+.content{
+    margin: 100px;
+    margin-top: 350px;
+    text-align: left;
+    color: white;
+}
+
+.content h1{
+    font-size: 80px;
+}
+
+button, .learnmore{
+    background-color: var(--blueBackground);
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;  
+    transition: 0.5s;
+    font-size: large;
+}
+
+button:hover, .learnmore:hover{
+    scale: 1.1;
+}
+main h1{
+    font-size: 50px;
+    text-align: center;
+    padding: 40px;
+}
+
+.selfie{
+    float: left;
+    margin-left: 100px;
+}
+
+.train{
+    float: right;
+    margin-right: 100px;
+}
+
+picture h3{
+    text-align: center;
+    font-size: x-large;
+    padding: 20px;
+}
+
+picture.train h3{
+    padding-left: 10px;
+}
+
+section{
+    width: auto;
+}
+
+.homePhotos{
+    background-color: var(--navyBackground);
+    color: white;
+    padding: 30px;
+}
+
+.explore{
+    width: auto;
+    height: 90vh;
+}
+
+main section.explore a{
+    text-decoration: none;
+    color: black;
+    transition: 2s ease;
+}
+
+main section.explore img:hover{
+    scale: 1.01;
+    border-radius: 10px;
+}
+.homePhotos picture img{
+    margin-left: 60px;
+    padding-bottom: 40px;
+}
+
+.homePhotos picture img:hover{
+    filter: grayscale(1);
+}
+
+.top{
+    background-color: var(--redBackground);
+    width: 10%;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;  
+    transition: 0.5s;
+    font-size: large;
+    float: right;
+}
+
+.top a{
+    text-decoration: none;
+    color: var(--WhiteText);
+}
+
+.top a:hover{
+    background-color: #e3143b;
+    color: var(--WhiteText);
+}
+
+footer{
+    text-align: center;
+    color: var(--WhiteText);
+    background-color: var(--navyBackground);
+    padding: 30px;
+    width: auto;
+    border-top: 2px solid var(--blackText);
+}
+
+footer p a{
+    text-decoration: underline;
+    color: white;
+}
+
+footer i{
+    padding: 10px;
+}
+
+/*
+    ABOUT PAGE
+*/
+.secondNav h1, .secondNav ul li a{
+    color: var(--blackText)
+}
+
+.aboutPageSelfie{
+    float: left;
+}
+
+.aboutPageMain{
+    padding-right: 70px;
+}
+
+.aboutPageAboutMe{
+    width: auto;
+    height: 70vh;
+    margin-bottom: 50px;
+}
+
+.aboutPageAboutMe h1{
+    text-align: center;
+}
+
+.floating picture{
+    margin-right: 50px;
+    padding-left: 70px;
+}
+
+.floating p{
+    padding-left: 100px;
+    font-size: 30px;
+}
+
+.aboutPageMain i{
+    padding: 40px 50px 0px 0px;
+    font-size: 60px;
+}
+
+.aboutPageMap{
+    float: right;
+}
+
+.AboutPagemyJourney{
+    padding: 10px;
+    background-color: var(--navyBackground);
+    color: var(--WhiteText);
+    width: auto;
+    height: 70vh;
+}
+
+.AboutPagemyJourney button{
+    margin-left: 90px;
+}
+
+.AboutPageAboutInterrailing{
+    width: auto;
+    height: 60vh;
+}
+
+.clear{
+    clear: float;
+}
+
+.AboutPageAboutInterrailing picture{
+    float: left;
+}
+
+.AboutPageFAQ{
+    background-color: var(--navyBackground);
+    color: var(--WhiteText);
+    width: auto;
+    height: 120vh;
+}
+
+details{
+    background-color: var(--blueBackground);
+    padding: 40px;
+    margin: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+details:hover{
+    background-color: var(--WhiteText);
+    color: var(--blackText);
+}
+
+.AboutMyJourney{
+    margin: 20px 50px 0px 50px;
+    width: auto;
+    height: 40vh;
+    font-size: x-large;
+}
+
+.AboutMyJourneyTravelled{
+    background-color: var(--navyBackground);
+    color: var(--WhiteText);
+    padding-left: 50px;
+    font-size: x-large;
+    width: auto;
+    height: 70vh;
+    padding-bottom: 20px;
+}
+
+.AboutMyJourneyTravelled p{
+    font-size: 1rem;
+}
+
+.AboutMyJourneyTravelled picture{
+    float: right;
+    padding-right: 50px;
+}
+
+.AboutMyJourneyTravelled ol{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    list-style-type: decimal-leading-zero;
+    line-height: 30px;
+}
+
+.AboutMyJourneyTravelled ol li:hover{
+    color: var(--blueBackground);
+}
+
+.AboutMyJourneyTravelled ol li ul li{
+    list-style-type: upper-roman;
+}
+
+.travelDates{
+    width: auto;
+    height: 90vh;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+    background-color: var(--navyBackground);
+    color: var(--WhiteText);
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    
+}
+
+thead tr{
+    background-color: var(--blueBackground);
+}
+
+thead tr th{
+    border-bottom: 5px solid black;
+}
+
+td, th{
+    /* border: 2px solid black; */
+    padding: 20px;
+}
+
+tbody tr:hover{
+    background-color: var(--blueBackground);
+    color: white;
+}
+
+.contactChat{
+    padding: 20px;
+    width: auto;
+    height: 50vh;
+}
+
+.contactChat p{
+   font-size: x-large;
+   padding-left: 70px;
+}
+
+.basicForm{
+    float: right;
+    display: inline-block;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 30%;
+    color: var(--WhiteText)
+    align-content: center;
+}
+
+input[type = "text"], input[type = "email"]{
+    width: 60%;
+   padding: 10px;
+   margin-top: 10px;
+   border-radius: 5px;
+}
+
+input[type = "submit"], input[type = "reset"]{
+    padding: 15px;
+    width: 25%;
+    transition: 0.5s ease-in-out;
+}
+
+input[type = "submit"]{
+    background-color: var(--blueBackground);
+    color: var(--WhiteText);
+}
+
+input[type = "submit"]:hover{
+    background-color: var(--navyBackground);
+    border-radius: 10px;
+}
+
+input[type = "reset"]:hover{
+    background-color: var(--redBackground);
+    color: var(--WhiteText);
+    border-radius: 10px;
+}
+
+.contactNewsletter{
+    background-color: var(--navyBackground);
+    color: var(--WhiteText);
+    width: auto;
+}
+
+.contactNewsletter form{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 20px;
+}
+
+.contactNewsletter form input, .contactNewsletter form label{
+   padding: 10px;
+}
+
+fieldset{
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+fieldset h3{
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+select{
+    width: 20vw;
+    height:2vw;
+    margin-top: 10px;
+}
+
+.contactNewsletter input[type = "submit"], .contactNewsletter input[type = "reset"]{
+    padding: 15px;
+    margin-right: 50px;
+}
+
+.contactNewsletter input[type = "submit"]:hover{
+    background-color: skyblue;
+    color: black;
+}
+
+.buttons{
+    text-align: center;
+}
+
+/*SITEMAP MAIN*/
+.sitemapMain{
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    padding-top: 50px;
+    font-size: xx-large;
+}
+
+.sitemapMain h2{
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+.sitemapMain ul{
+    margin: 10px;
+}
+
+.sitemapMain ul li{
+    list-style-type: none;
+}
+
+.sitemapMain ul li a{
+    text-decoration: underline;
+    color: var(--blackText);
+}
