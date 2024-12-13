@@ -69,11 +69,11 @@ nav ul li a:hover{
     color: white;
 }
 
-.content h1{
+.content h2{
     font-size: 80px;
 }
 
-button, .learnmore{
+span.learnmore, button{
     background-color: var(--blueBackground);
     width: 20%;
     padding: 20px;
@@ -87,10 +87,10 @@ button, .learnmore{
     font-size: large;
 }
 
-button:hover, .learnmore:hover{
-    scale: 1.1;
+span:hover, .learnmore:hover{
+    background-color: red;
 }
-main h1{
+main h2{
     font-size: 50px;
     text-align: center;
     padding: 40px;
@@ -106,9 +106,9 @@ main h1{
     margin-right: 100px;
 }
 
-picture h3{
+picture p{
     text-align: center;
-    font-size: x-large;
+    font-size: xx-large;
     padding: 20px;
 }
 
@@ -128,7 +128,7 @@ section{
 
 .explore{
     width: auto;
-    height: 90vh;
+    height: 100vh;
 }
 
 main section.explore a{
@@ -138,7 +138,7 @@ main section.explore a{
 }
 
 main section.explore img:hover{
-    scale: 1.01;
+    filter: grayscale(1);
     border-radius: 10px;
 }
 .homePhotos picture img{
@@ -199,7 +199,7 @@ footer i{
     ABOUT PAGE
 */
 .secondNav h1, .secondNav ul li a{
-    color: var(--blackText)
+    color: var(--blackText);
 }
 
 .aboutPageSelfie{
@@ -227,7 +227,12 @@ footer i{
 
 .floating p{
     padding-left: 100px;
-    font-size: 30px;
+    font-size: 25px;
+}
+
+main h1{
+    text-align: center;
+    margin: 20px;
 }
 
 .aboutPageMain i{
@@ -257,7 +262,7 @@ footer i{
 }
 
 .clear{
-    clear: float;
+    clear: both;
 }
 
 .AboutPageAboutInterrailing picture{
@@ -373,7 +378,7 @@ tbody tr:hover{
     margin-right: auto;
     margin-left: auto;
     width: 30%;
-    color: var(--WhiteText)
+    color: var(--WhiteText);
     align-content: center;
 }
 
