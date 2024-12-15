@@ -1,9 +1,9 @@
 :root{
-    --WhiteText: #ffffff;
-    --blackText: #111111;
-    --blueBackground: #3DA9FC;
-    --navyBackground: #094067;
-    --redBackground: #EF4565;
+    --WhiteText:#ffffff;
+    --blackText:#111111;
+    --blueBackground:#3DA9FC;
+    --navyBackground:#094067;
+    --redBackground:#EF4565;
 }
 
 *{
@@ -12,13 +12,13 @@
 }
 
 body{
-    letter-spacing: 1.5px;
+    letter-spacing: 0.09375rem;
 }
 /*
     HOME PAGE
 */
 header{
-    width: 100%;
+    width: auto;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("Assets/HOMEPAGE/EurostarTrain.jpg");
     background-size: cover;
@@ -30,7 +30,7 @@ nav{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px;
+    padding: 1.8rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,13 +43,12 @@ nav > h1{
 
 nav ul li{
     list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
+    display: inline;
+    margin: 0 1.25rem;
 }
 
 nav ul li.selected{
-    border-bottom: 2px solid var(--blueBackground);
+    border-bottom: 0.125rem solid var(--blueBackground);
 }
 
 nav ul li a{
@@ -59,27 +58,27 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    border-bottom: 2px solid var(--blueBackground);
+    border-bottom: 0.125rem solid var(--blueBackground);
 }
 
 .content{
-    margin: 100px;
-    margin-top: 350px;
+    margin: 3rem;
+    margin-top: 20rem;
     text-align: left;
     color: white;
 }
 
 .content h2{
-    font-size: 80px;
+    font-size: 5rem;
 }
 
-span.learnmore, button{
+span.learnmore, .learnmore{
     background-color: var(--blueBackground);
     width: 20%;
-    padding: 20px;
+    padding: 1.25rem;
     text-align: center;
-    margin-top: 30px;
-    border-radius: 10px;
+    margin-top: 1.8rem;
+    border-radius: 0.6rem;
     font-weight: bold;
     color: white;
     cursor: pointer;  
@@ -87,33 +86,42 @@ span.learnmore, button{
     font-size: large;
 }
 
-span:hover, .learnmore:hover{
+span.learnmore{
+    position: absolute;
+    width: 10%;
+}
+
+.learnmore:hover{
+    background-color: var(--navyBackground);
+}
+
+span:hover{
     background-color: red;
 }
 main h2{
-    font-size: 50px;
+    font-size: 3rem;
     text-align: center;
-    padding: 40px;
+    padding: 2.5rem;
 }
 
 .selfie{
     float: left;
-    margin-left: 100px;
+    margin-left: 6rem;
 }
 
 .train{
     float: right;
-    margin-right: 100px;
+    margin-right: 6rem;
 }
 
 picture p{
     text-align: center;
     font-size: xx-large;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 picture.train h3{
-    padding-left: 10px;
+    padding-left: 0.6rem;
 }
 
 section{
@@ -123,7 +131,7 @@ section{
 .homePhotos{
     background-color: var(--navyBackground);
     color: white;
-    padding: 30px;
+    padding: 1.8rem;
 }
 
 .explore{
@@ -139,11 +147,11 @@ main section.explore a{
 
 main section.explore img:hover{
     filter: grayscale(1);
-    border-radius: 10px;
+    border-radius: 0.6;
 }
 .homePhotos picture img{
-    margin-left: 60px;
-    padding-bottom: 40px;
+    margin-left: 4rem;
+    padding-bottom: 2.5rem;
 }
 
 .homePhotos picture img:hover{
@@ -153,11 +161,11 @@ main section.explore img:hover{
 .top{
     background-color: var(--redBackground);
     width: 10%;
-    padding: 20px;
-    margin: 20px;
+    padding: 1.25rem;
+    margin: 1.25rem;
     text-align: center;
-    margin-top: 30px;
-    border-radius: 10px;
+    margin-top: 1.8rem;
+    border-radius: 0.6rem;
     border: none;
     font-weight: bold;
     color: white;
@@ -181,9 +189,9 @@ footer{
     text-align: center;
     color: var(--WhiteText);
     background-color: var(--navyBackground);
-    padding: 30px;
+    padding: 1.8rem;
     width: auto;
-    border-top: 2px solid var(--blackText);
+    border-top: 0.125rem solid var(--blackText);
 }
 
 footer p a{
@@ -192,7 +200,11 @@ footer p a{
 }
 
 footer i{
-    padding: 10px;
+    padding: 0.6rem;
+}
+
+.links{
+    text-align: center;
 }
 
 /*
@@ -207,13 +219,22 @@ footer i{
 }
 
 .aboutPageMain{
-    padding-right: 70px;
+    padding-right: 4rem;
+}
+
+.aboutPageMain h1{
+    font-size: xx-large;
+    padding: 1.25rem;
+}
+
+.aboutPageMain i{
+    color: var(--navyBackground);
 }
 
 .aboutPageAboutMe{
     width: auto;
-    height: 70vh;
-    margin-bottom: 50px;
+    height: 80vh;
+    margin-bottom: 3rem;
 }
 
 .aboutPageAboutMe h1{
@@ -221,23 +242,23 @@ footer i{
 }
 
 .floating picture{
-    margin-right: 50px;
-    padding-left: 70px;
+    margin-right: 3rem;
+    padding-left: 4.3rem;
 }
 
 .floating p{
-    padding-left: 100px;
-    font-size: 25px;
+    padding-left: 6.25rem;
+    font-size: 1.5rem;
 }
 
 main h1{
     text-align: center;
-    margin: 20px;
+    margin: 1.25rem;
 }
 
 .aboutPageMain i{
-    padding: 40px 50px 0px 0px;
-    font-size: 60px;
+    padding: 2.5rem 3rem 0rem 0rem;
+    font-size: 3.75rem;
 }
 
 .aboutPageMap{
@@ -245,7 +266,7 @@ main h1{
 }
 
 .AboutPagemyJourney{
-    padding: 10px;
+    padding: 0.6rem;
     background-color: var(--navyBackground);
     color: var(--WhiteText);
     width: auto;
@@ -253,7 +274,7 @@ main h1{
 }
 
 .AboutPagemyJourney button{
-    margin-left: 90px;
+    margin-left: 5.6rem;
 }
 
 .AboutPageAboutInterrailing{
@@ -278,10 +299,10 @@ main h1{
 
 details{
     background-color: var(--blueBackground);
-    padding: 40px;
-    margin: 50px;
-    font-size: 20px;
-    border-radius: 10px;
+    padding: 2.5rem;
+    margin: 3rem;
+    font-size: 1.25rem;
+    border-radius: 0.6rem;
 }
 
 details:hover{
@@ -290,20 +311,19 @@ details:hover{
 }
 
 .AboutMyJourney{
-    margin: 20px 50px 0px 50px;
+    margin: 1.25rem 3rem 0rem 3rem;
     width: auto;
-    height: 40vh;
+    height: 50vh;
     font-size: x-large;
 }
 
 .AboutMyJourneyTravelled{
     background-color: var(--navyBackground);
     color: var(--WhiteText);
-    padding-left: 50px;
+    padding: 0.6rem 0rem 1.25rem 3rem;
     font-size: x-large;
     width: auto;
-    height: 70vh;
-    padding-bottom: 20px;
+    height: 100vh;
 }
 
 .AboutMyJourneyTravelled p{
@@ -312,7 +332,7 @@ details:hover{
 
 .AboutMyJourneyTravelled picture{
     float: right;
-    padding-right: 50px;
+    padding-right: 3rem;
 }
 
 .AboutMyJourneyTravelled ol{
@@ -320,7 +340,7 @@ details:hover{
     margin-right: auto;
     width: 70%;
     list-style-type: decimal-leading-zero;
-    line-height: 30px;
+    line-height: 1.8rem;
 }
 
 .AboutMyJourneyTravelled ol li:hover{
@@ -331,6 +351,15 @@ details:hover{
     list-style-type: upper-roman;
 }
 
+.AboutMyJourneyTravelled ol li ul li ul li{
+    list-style-type: square;
+}
+
+.travelDates{
+    width: auto;
+    height: 100vh;
+}
+
 table{
     border-collapse: collapse;
     text-align: center;
@@ -338,8 +367,7 @@ table{
     color: var(--WhiteText);
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
-    
+    width: 80%;   
 }
 
 thead tr{
@@ -347,12 +375,11 @@ thead tr{
 }
 
 thead tr th{
-    border-bottom: 5px solid black;
+    border-bottom: 0.3rem solid black;
 }
 
 td, th{
-    /* border: 2px solid black; */
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 tbody tr:hover{
@@ -361,20 +388,24 @@ tbody tr:hover{
 }
 
 .contactChat{
-    padding: 20px;
+    padding: 1.25rem;
     width: auto;
-    height: 50vh;
+    height: 80vh;
 }
 
 .contactChat p{
    font-size: x-large;
-   padding-left: 70px;
+   padding-left: 4.3rem;
+}
+
+.contactChat ul{
+    font-size: x-large;
+    margin-left: 3.125rem;
 }
 
 .basicForm{
     float: right;
-    display: inline-block;
-    padding: 20px;
+    padding: 1.25rem;
     margin-right: auto;
     margin-left: auto;
     width: 30%;
@@ -384,13 +415,13 @@ tbody tr:hover{
 
 input[type = "text"], input[type = "email"]{
     width: 60%;
-   padding: 10px;
-   margin-top: 10px;
-   border-radius: 5px;
+   padding: 0.6rem;
+   margin-top: 0.6rem;
+   border-radius: 0.3rem;
 }
 
 input[type = "submit"], input[type = "reset"]{
-    padding: 15px;
+    padding: 0.9rem;
     width: 25%;
     transition: 0.5s ease-in-out;
 }
@@ -402,13 +433,13 @@ input[type = "submit"]{
 
 input[type = "submit"]:hover{
     background-color: var(--navyBackground);
-    border-radius: 10px;
+    border-radius: 0.6rem;
 }
 
 input[type = "reset"]:hover{
     background-color: var(--redBackground);
     color: var(--WhiteText);
-    border-radius: 10px;
+    border-radius: 0.6rem;
 }
 
 .contactNewsletter{
@@ -421,32 +452,32 @@ input[type = "reset"]:hover{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
 }
 
 .contactNewsletter form input, .contactNewsletter form label{
-   padding: 10px;
+   padding: 0.6rem;
 }
 
 fieldset{
-    margin-bottom: 50px;
-    padding: 20px;
+    margin-bottom: 3rem;
+    padding: 1.25rem;
 }
 
 fieldset h3{
-    margin-top: 20px;
-    padding-bottom: 10px;
+    margin-top: 1.25rem;
+    padding-bottom: 0.6rem;
 }
 
 select{
     width: 20vw;
     height:2vw;
-    margin-top: 10px;
+    margin-top: 0.6rem;
 }
 
 .contactNewsletter input[type = "submit"], .contactNewsletter input[type = "reset"]{
-    padding: 15px;
-    margin-right: 50px;
+    padding: 0.9rem;
+    margin-right: 3rem;
 }
 
 .contactNewsletter input[type = "submit"]:hover{
@@ -460,27 +491,53 @@ select{
 
 /*SITEMAP MAIN*/
 .sitemapMain{
+    height: 110vh;
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
-    padding-top: 50px;
+    width: 50%;
     font-size: xx-large;
+    background-color: var(--navyBackground);
 }
 
 .sitemapMain h2{
-    margin-bottom: 20px;
-    font-size: 60px;
+    padding: 0.6rem;
+    margin: 1.25rem;
+    border-bottom: 0.125rem solid var(--WhiteText);
+    color: var(--WhiteText);
 }
 
 .sitemapMain ul{
-    margin: 10px;
+    margin: 0.6rem;
 }
 
 .sitemapMain ul li{
     list-style-type: none;
 }
 
+.sitemapMain ul li a:hover{
+    color: var(--redBackground);
+}
+
+.sitemapMain ul li ol li a:hover{
+    color: var(--blueBackground);
+}
+
 .sitemapMain ul li a{
     text-decoration: underline;
-    color: var(--blackText);
+    color: var(--WhiteText);
+}
+
+.photosPage{
+    width: auto;
+    height: 180vh;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3.125rem;
+}
+
+.display{
+    display: block;
 }

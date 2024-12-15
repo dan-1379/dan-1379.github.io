@@ -9,7 +9,7 @@
     <meta name="language" content="English">
     <meta name="author" content="Daniel Courtney">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact me</title>
     <!--
     TITLE: FONT AWESOME ICONS
     AUTHOR: W3 SCHOOLS
@@ -35,7 +35,7 @@
    </nav>
 
    <main>
-        <section class = "contactChat">
+        <section class = "contactChat" id = "chatSection">
             <h2>Lets chat.</h2>
             <form action="mailto:dan.courtney@students.ittralee.ie" class="basicForm">
                 <label for="first.name">Firstname</label><br>
@@ -55,35 +55,32 @@
             </form>
 
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Aenean sagittis ipsum et sapien porttitor molestie non ut odio. 
-                Sed commodo elit in metus ullamcorper tincidunt.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Aenean sagittis ipsum et sapien porttitor molestie non ut odio.
-                Sed commodo elit in metus ullamcorper tincidunt.
+                I have provided lots of travel information on this website, giving you a range of insight into planning and travelling successfully.
+                If there is a certain topic you wish to discuss with me that I have not mentioned on this website, please fill out the form to get in touch with me and
+                I will get back to you ASAP.
                 <br><br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Aenean sagittis ipsum et sapien porttitor molestie non ut odio. 
-                Sed commodo elit in metus ullamcorper tincidunt.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Aenean sagittis ipsum et sapien porttitor molestie non ut odio.
-                Sed commodo elit in metus ullamcorper tincidunt.
+                I can give you advice on the following topics:
                 <br><br>
-                Get in touch with me <a href="mailto:dan.courtney@students.ittralee.ie">here</a> by email
             </p>
+            <ul>
+                <li>Budget</li>
+                <li>Safety</li>
+                <li>Accomodations</li>
+                <li>Bookings</li>
+            </ul>
         </section>
 
-        <section class="contactNewsletter">
+        <section class="contactNewsletter" id = "newsletterSection">
             <h2>Subscribe to my Newsletter</h2>
-            <form action="mailto:dan.courtney@students.ittralee.ie" method="post" enctype="text/plain">
+            <form action="mailto:dan.courtney@students.ittralee.ie?subject=Newsletter" method="post" enctype="text/plain">
                 <fieldset>
                     <legend>Contact Details</legend>
 
                     <label for="fname">Firstname</label><br>
-                    <input type="text" name="firstname" id="fname"><br><br>
+                    <input type="text" name="firstname" id="fname" required><br><br>
 
                     <label for="lname">LastName</label><br>
-                    <input type="text" name="lastname" id="lname"><br><br>
+                    <input type="text" name="lastname" id="lname" required><br><br>
 
                     <label for="e-mail">Email</label><br>
                     <input type="email" name="email" id="e-mail"><br><br>
@@ -129,7 +126,7 @@
                 <fieldset>
                     <legend>Further Comments</legend>
                     <h3>Do you have any further comments?</h3>
-                    <textarea name="comments" id="comments" rows="5" cols="50"></textarea>
+                    <textarea name="comments" id="comments" rows="10" cols="100"></textarea>
                 </fieldset>
 
                 <div class="buttons">
@@ -155,7 +152,11 @@ MODIFIED: NO MODIFICATIONS MADE. USING LINKED ICONS AS LINKS TO SOCIAL MEDIAS
     <i class="fa fa-git-square" style="font-size:36px"></i>
     <i class="fa fa-linkedin-square" style="font-size:36px"></i>
     <p>&copy;Copyright Daniel Courtney 2024</p>
-    <p><a href="sitemap.html">Sitemap</a></p>
+    <div class="links">
+        <p><a href="sitemap.html">Sitemap</a></p>
+        <p><a href="https://danieljcourtney.com/" target="_blank">Website Link</a></p>
+        <p><a href="https://github.com/dan-1379/dan-1379.github.io.git" target="_blank">Github Repository</a></p>
+    </div>
 <!--END OF CODE LINK-->
     </footer>
 </body>
